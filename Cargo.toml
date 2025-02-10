@@ -1,0 +1,15 @@
+[package]
+name = "kill-switch"
+version = "0.1.0"
+edition = "2021"
+description = "A secure disk wiping tool implementing DoD 5220.22-M standard"
+authors = ["Your Organization"]
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+anyhow = "1.0"
+log = "0.4"
+env_logger = "0.10"
+indicatif = "0.17"
+nix = { version = "0.27", features = ["user"] }
+rand = "0.8"
